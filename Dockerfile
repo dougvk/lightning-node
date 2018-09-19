@@ -7,10 +7,10 @@ RUN set -ex \
     && apt-get install -qq --no-install-recommends ca-certificates dirmngr gosu gpg wget \
     && rm -rf /var/lib/apt/lists/*
 
-ENV BITCOIN_VERSION 0.16.2
-ENV BITCOIN_URL https://bitcoin.org/bin/bitcoin-core-0.16.2/bitcoin-0.16.2-x86_64-linux-gnu.tar.gz
-ENV BITCOIN_SHA256 71f217e30e98d5ccc1fb574b9499595e87e118e596278fad5507a7b84650859c
-ENV BITCOIN_ASC_URL https://bitcoin.org/bin/bitcoin-core-0.16.2/SHA256SUMS.asc
+ENV BITCOIN_VERSION 0.16.3
+ENV BITCOIN_URL https://bitcoin.org/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-x86_64-linux-gnu.tar.gz
+ENV BITCOIN_SHA256 5d422a9d544742bc0df12427383f9c2517433ce7b58cf672b9a9b17c2ef51e4f
+ENV BITCOIN_ASC_URL https://bitcoin.org/bin/bitcoin-core-0.16.3/SHA256SUMS.asc
 ENV BITCOIN_PGP_KEY 01EA5486DE18A882D4C2684590C8019E36C2E964
 
 # install bitcoin binaries
