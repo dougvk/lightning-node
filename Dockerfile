@@ -8,11 +8,11 @@ RUN set -ex \
     && rm -rf /var/lib/apt/lists/*
 
 # install bitcoin binaries
+
 ENV BITCOIN_VERSION 0.17.0
-ENV ARCH x86_64-linux-gnu
 
 RUN set -ex \
-    && BITCOIN_ARCHIVE=bitcoin-${BITCOIN_VERSION}-${ARCH}.tar.gz \
+    && BITCOIN_ARCHIVE=bitcoin-${BITCOIN_VERSION}-$(uname -m)-linux-gnu.tar.gz \
     && cd /tmp \
     && wget -q https://bitcoincore.org/bin/bitcoin-core-${BITCOIN_VERSION}/${BITCOIN_ARCHIVE} \
     && wget -q https://bitcoincore.org/bin/bitcoin-core-${BITCOIN_VERSION}/SHA256SUMS.asc \
