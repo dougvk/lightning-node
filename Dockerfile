@@ -10,7 +10,6 @@ RUN set -ex \
 # install bitcoin binaries
 
 ENV BITCOIN_VERSION 0.17.0
-ENV ARCH x86_64-linux-gnu
 
 RUN set -ex \
     && BITCOIN_ARCHIVE=bitcoin-${BITCOIN_VERSION}-$(uname -m)-linux-gnu.tar.gz \
