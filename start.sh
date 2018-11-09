@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/local/bin/bitcoind -loadblock=/root/.bitcoin/bootstrap.dat
+/usr/local/bin/bitcoind -loadblock=/data/bootstrap.dat
