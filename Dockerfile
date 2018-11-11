@@ -39,4 +39,9 @@ COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8332 8333 18332 18333
-CMD ["bitcoind"]
+
+COPY start.sh start.sh
+
+RUN chmod +x start.sh
+
+CMD [ "/start.sh" ]

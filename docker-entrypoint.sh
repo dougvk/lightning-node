@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [[ "$1" == "bitcoin-cli" || "$1" == "bitcoin-tx" || "$1" == "bitcoind" || "$1" == "test_bitcoin" ]]; then
+if [[ "$1" == "bitcoin-cli" || "$1" == "bitcoin-tx" || "$1" == "bitcoind" || "$1" == "test_bitcoin" || "$1" == "start.sh" || "$1" == "/start.sh" ]]; then
     mkdir -p "$BITCOIN_DATA"
 
     if [[ ! -s "$BITCOIN_DATA/bitcoin.conf" ]]; then
